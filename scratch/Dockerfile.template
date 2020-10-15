@@ -33,9 +33,7 @@ COPY ./autostart /home/scratch/.config/openbox/autostart
 COPY ./rc.xml /home/scratch/.config/openbox/rc.xml
 RUN mkdir '/home/scratch/.config/Scratch Desktop'
 RUN chown -R scratch:scratch /home/scratch
-RUN mkdir /data/scratch/projects
-RUN ln -s /data/scratch/projects /home/scratch/projects
-RUN chown -R scratch:scratch /data/scratch
+RUN ln -s /data/scratch /home/scratch/projects
 
 COPY ./menu.xml /var/lib/openbox/debian-menu.xml
 
