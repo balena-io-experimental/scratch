@@ -1,0 +1,5 @@
+# Disable display power management
+xset s off
+xset s noblank
+
+scratch3 &

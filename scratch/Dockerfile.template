@@ -1,0 +1,48 @@
+FROM balenalib/rpi-raspbian
+
+RUN install_packages wget \
+    xserver-xorg \
+    xserver-xorg-legacy \
+    x11-xserver-utils \
+    xterm x11-xserver-utils \
+    xterm \ 
+    xinit \
+    libgtk-3-dev \
+    libnss3-dev \
+    libxss1 \
+    libasound2-dev \
+    nano \
+    openbox \ 
+    scratch3
+
+# Setting working directory
+WORKDIR /usr/src/app
+
+COPY ./start.sh ./
+
+ENV UDEV=1
+
+
+# Add scratch user
+RUN useradd scratch -m -s /bin/bash -G root && \
+    groupadd -r -f scratch && id -u scratch
+
+RUN mkdir /home/scratch/.config
+RUN mkdir /home/scratch/.config/openbox
+COPY ./autostart /home/scratch/.config/openbox/autostart
+COPY ./rc.xml /home/scratch/.config/openbox/rc.xml
+RUN mkdir '/home/scratch/.config/Scratch Desktop'
+RUN chown -R scratch:scratch /home/scratch
+RUN mkdir /data/scratch/projects
+RUN ln -s /data/scratch/projects /home/scratch/projects
+RUN chown -R scratch:scratch /data/scratch
+
+COPY ./menu.xml /var/lib/openbox/debian-menu.xml
+
+
+# udev rule to set specific permissions 
+RUN echo 'SUBSYSTEM=="vchiq",GROUP="video",MODE="0660"' > /etc/udev/rules.d/10-vchiq-permissions.rules
+RUN usermod -a -G audio,video,tty scratch
+
+ENTRYPOINT ["bash", "start.sh"]
+CMD ["export DISPLAY=:0"]

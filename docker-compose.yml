@@ -1,0 +1,11 @@
+version: '2.1'
+volumes:
+    settings:
+services:
+  scratch:
+    build: ./scratch
+    restart: always
+    network_mode: host
+    privileged: true
+    volumes:
+      - 'settings:/data/scratch'
