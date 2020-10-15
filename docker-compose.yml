@@ -9,3 +9,4 @@ services:
     privileged: true
     volumes:
       - 'settings:/data/scratch'
+    shm_size: '2gb'
