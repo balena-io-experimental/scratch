@@ -12,17 +12,13 @@ COPY ./start.sh ./
 RUN useradd scratch -m -s /bin/bash -G root && \
     groupadd -r -f scratch && id -u scratch
 
-RUN usermod -a -G audio,video,tty scratch
-
 RUN mkdir /home/scratch/.config
 RUN mkdir /home/scratch/.config/openbox
 COPY ./autostart /home/scratch/.config/openbox/autostart
 COPY ./rc.xml /home/scratch/.config/openbox/rc.xml
 RUN mkdir '/home/scratch/.config/Scratch Desktop'
 RUN chown -R scratch:scratch /home/scratch
-RUN mkdir /data/scratch/projects
-RUN ln -s /data/scratch/projects /home/scratch/projects
-RUN chown -R scratch:scratch /data/scratch
+RUN ln -s /data/scratch /home/scratch/projects
 
 COPY ./menu.xml /var/lib/openbox/debian-menu.xml
 
