@@ -12,7 +12,7 @@ This project will run [Scratch](https://scratch.mit.edu/) Desktop on your Raspbe
 Have fun!!
 
 ## Hardware required
-* Raspberry Pi4 2, 4, or 8Gb model
+* Raspberry Pi 4 (2, 4, or 8Gb model)
 * SD card (we recommend the 16Gb Sandisk Extreme)
 * HDMI TV or Monitor
 * Keyboard
