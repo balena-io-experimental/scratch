@@ -1,1 +1,16 @@
-defaultDeviceType: 'raspberrypi4-64'
+
+version: "2"
+slug: "scratch"
+name: "Scratch on balena"
+type: "sw.application"
+assets:
+  - url: "https://github.com/balenalabs-incubator/scratch"
+    name: "repository"
+  - url: "https://raw.githubusercontent.com/balenalabs-incubator/scratch/master/logo.png"
+    name: "logo"
+data:
+  description: "Create your own Scratch server and share the gift of learing to code with a Raspberry Pi 4."
+  applicationEnvironmentVariables:
+  defaultDeviceType: "raspberrypi4-64"
+  supportedDeviceTypes:
+    - "raspberrypi4-64"
