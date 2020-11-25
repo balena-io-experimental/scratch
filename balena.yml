@@ -1,4 +1,3 @@
-
 version: "2"
 slug: "scratch"
 name: "Scratch on balena"
@@ -10,7 +9,6 @@ assets:
     name: "logo"
 data:
   description: "Create your own Scratch server and share the gift of learing to code with a Raspberry Pi 4."
-  applicationEnvironmentVariables:
   defaultDeviceType: "raspberrypi4-64"
   supportedDeviceTypes:
     - "raspberrypi4-64"
