@@ -2,7 +2,7 @@
 
 Turn your Raspberry Pi 4 (2, 4 or 8Gb model) into a Scratch3 coding rig! The fastest way to get going is to use the Deploy with balena button (after logging into your free balenaCloud account).
 
-[![](https://balena.io/deploy.png)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/balenalabs-incubator/scratch)
+[![](https://balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/balenalabs-incubator/scratch)
 
 ## Description
 This project will run [Scratch](https://scratch.mit.edu/) Desktop on your Raspberry Pi, allowing you to learn how to code using [blocks](https://en.wikipedia.org/wiki/Block_(programming)). If you add a [Sense Hat](https://www.raspberrypi.org/products/sense-hat/?resellerType=home) to your Pi, you can enable the Sense HAT blocks:<br/>
