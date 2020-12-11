@@ -1,6 +1,6 @@
 version: "2"
 slug: "scratch"
-name: "Scratch on balena"
+name: "Scratch"
 type: "sw.application"
 assets:
   - url: "https://github.com/balenalabs-incubator/scratch"
