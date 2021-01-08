@@ -32,6 +32,7 @@ This project has been tested to work on the following devices:
 | Raspberry Pi 4 4Gb | ✔ |
 | Raspberry Pi 4 8Gb | ✔ |
 | Raspberry Pi 4 1Gb | :x: |
+| Raspberry Pi 400 | ✔ |
 | Raspberry Pi 3b+ | :x: |
 | Raspberry Pi 3b+ (64-bit OS) | :x: |
 | balena Fin | :x: |
