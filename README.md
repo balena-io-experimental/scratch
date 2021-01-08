@@ -1,6 +1,6 @@
 # Build a Scratch server using a Raspberry Pi and balena
 
-Turn your Raspberry Pi 4 (2, 4 or 8Gb model) into a Scratch3 coding rig! The fastest way to get going is to use the Deploy with balena button (after logging into your free balenaCloud account).
+Turn your Raspberry Pi 4 (2, 4 or 8Gb model) or [Pi400](https://www.raspberrypi.org/products/raspberry-pi-400/) into a Scratch3 coding rig! The fastest way to get going is to use the Deploy with balena button (after logging into your free balenaCloud account).
 
 [![](https://balena.io/deploy.svg)](https://dashboard.balena-cloud.com/deploy?repoUrl=https://github.com/balenalabs-incubator/scratch)
 
