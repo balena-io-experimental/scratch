@@ -12,3 +12,4 @@ data:
   defaultDeviceType: "raspberrypi4-64"
   supportedDeviceTypes:
     - "raspberrypi4-64"
+    - "raspberrypi400-64"
