@@ -8,7 +8,7 @@ assets:
   - url: "https://raw.githubusercontent.com/balenalabs-incubator/scratch/main/logo.png"
     name: "logo"
 data:
-  description: "Create your own Scratch server and share the gift of learning to code with a Raspberry Pi 4."
+  description: "An educational block-based visual programming language running on a Raspberry Pi 4."
   defaultDeviceType: "raspberrypi4-64"
   supportedDeviceTypes:
     - "raspberrypi4-64"
