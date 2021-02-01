@@ -1,14 +1,16 @@
-version: "2"
-slug: "scratch"
 name: "Scratch"
+description: "An educational block-based visual programming language running on a Raspberry Pi 4."
 type: "sw.application"
 assets:
-  - url: "https://github.com/balenalabs-incubator/scratch"
-    name: "repository"
-  - url: "https://raw.githubusercontent.com/balenalabs-incubator/scratch/main/logo.png"
-    name: "logo"
+  repository:
+    type: "blob.asset"
+    data:
+      url: "https://github.com/balenalabs-incubator/scratch"
+  logo:
+    type: "blob.asset"
+    data:
+      url: "https://raw.githubusercontent.com/balenalabs-incubator/scratch/main/logo.png"
 data:
-  description: "An educational block-based visual programming language running on a Raspberry Pi 4."
   defaultDeviceType: "raspberrypi4-64"
   supportedDeviceTypes:
     - "raspberrypi4-64"
