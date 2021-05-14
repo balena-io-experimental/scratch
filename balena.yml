@@ -2,7 +2,6 @@ name: "Scratch"
 description: "An educational block-based visual programming language running on a Raspberry Pi 4."
 fleetcta: Scratch that itch
 post-provisioning: >-
-  ## Usage instructions
   Attach your Pi to a HDMI TV or display, and add a keyboard and mouse. Allow a few minutes for your device to download the application. The Scratch desktop will appear on your screen. Happy coding!
 type: "sw.application"
 assets:
